@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title> Formulaire</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+
+    <!-- On charge les Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- On utilise la bibliothèque Materialize -->
+    <link rel="stylesheet" href="./materialize/css/materialize.css">
+    <link rel="stylesheet" href="./css/style_formulaire.css" />
+
+  </head>
+
+  <body>
+
+    <h1>
+      FORMULAIRE DE RÉSERVATION
+    </h1>
+
+
+    <form method="post" action="traitement.php">
+
+
+        <h2>
+          Informations générales
+        </h2>
+
+        <p>
+
+          <label for="Nom">1. Nom* </label><br />
+          <input type="text" name="Nom" id="Nom" maxlength="35" placeholder="Dupont"
+          required />
+
+
+        </p>
+
+        <p>
+
+          <label for="Prénom">2. Prénom* </label><br />
+          <input type="text" name="Prénom" id="Prénom" maxlength="35" placeholder="Jacques" required />
+
+
+        </p>
+
+        <p>
+          <label for="email">3. Adresse email* </label><br />
+          <input type="email" placeholder="Nom.prenom@" maxlength="50"required />
+        </p>
+
+        <p>
+          <label for="Téléphone">4. Téléphone </label><br />
+          <input type="tel" placeholder="06xxxxxxxx" maxlength="10"/>
+        </p>
+
+
+
+        <h2>
+          Réservation
+        </h2>
+
+        <p>
+        <p>
+          <label for="Magasins">5. Choisissez votre magasin*</label><br />
+          <select name="Magasins" id="Magasins" required >
+
+            <option value="paris">Paris</option>
+            <option value="paris">Lille</option>
+            <option value="paris">Marseille</option>
+            <option value="paris">Lyon</option>
+            <option value="paris">Grenoble</option>
+            <option value="paris">Nice</option>
+
+          </select>
+
+        </p>
+
+        <p>
+          <label for="Date">6. Choisissez votre week-end* </label><br />
+          <input type="date" required />
+        </p>
+
+        <p>
+          <label for="Repas">7. Souhaitez vous avoir les repas de votre week end fournis (supplément de 10 euros par personne pour 5 repas )*</label><br />
+          <select name="Magasins" id="Magasins" required >
+
+            <option value="Oui">Avec repas</option>
+            <option value="Non">Sans repas</option>
+
+          </select>
+
+        </p>
+
+        <p>
+          <labelfor="Question">8. Avez vous des questions supplémentaire ou des remarques ? (réponse par email dans les 48h) </label><br />
+          <textarea rows="7" cols="100" placeholder="Ecrivez ici"></textarea>
+        </p>
+
+      <input class="btn" type="submit" value="SOUMETTRE"  >
+
+
+    </form>
+
+  </body>
+
+</html>
